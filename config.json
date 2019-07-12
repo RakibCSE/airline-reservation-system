@@ -1,0 +1,9 @@
+{
+  "secret_key": "",
+  "db_name": "",
+  "db_user": "",
+  "db_password": "",
+  "internal_ip": "",
+  "email_host_user": "",
+  "email_host_password": ""
+}
