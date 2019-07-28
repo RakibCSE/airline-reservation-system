@@ -17,6 +17,9 @@ class Travelling(models.Model):
     ticket_rate = models.IntegerField()
     total_collected = models.IntegerField(default=0)
 
+    def __str__(self):
+        return self.flight + " From " + self.from_place + " To " + self.to_place
+
 
 class Booking(models.Model):
     booked = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
