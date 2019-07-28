@@ -1,0 +1,13 @@
+.book-card .row {
+    margin:0;
+    padding: 0;
+}
+
+.material-icons {
+    font-size: 2.5em;
+}
+
+.purchase-card-panel {
+    -webkit-box-shadow: 0 0;
+    box-shadow: 0 0;
+}
