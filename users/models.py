@@ -11,7 +11,5 @@ class CustomUser(AbstractUser):
     email = models.EmailField(max_length=100, unique=True)
     age = models.IntegerField(null=True)
 
-
-class BookingBy(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    booked = models.ForeignKey(Booking, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.username + " - " + self.fullname
