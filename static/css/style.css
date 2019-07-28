@@ -1,0 +1,50 @@
+html {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 2200px;
+}
+
+.top-row {
+    margin-top: 50px;
+}
+
+.bottom-row {
+    margin-bottom: 50px;
+}
+
+nav {
+    background-color: #2a1e6b;
+}
+
+input {
+    margin-bottom: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+input:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.input-field {
+    border: 2px solid #2a1e6b;
+    border-radius: 5px;
+}
+
+.flight_image {
+    height: 50px;
+    width: 50px;
+}
+
+.flight_name {
+    font-size: 2.3rem;
+}
+
+.flight_table {
+    font-size: 1.2rem;
+}

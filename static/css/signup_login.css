@@ -1,0 +1,10 @@
+.auth-card {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .auth-card {
+      padding: 0;
+  }
+}
