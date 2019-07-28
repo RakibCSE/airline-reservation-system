@@ -1,14 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Signup</title>
-</head>
-<body>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Signup</button>
-</form>
-</body>
-</html>
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "css/signup_login.css" %}">
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col l6 push-l3 m8 push-m2 s12">
+            <div class="card-panel auth-card">
+                <h4 class="center blue-grey-text">Sign Up</h4>
+                <div class="row">
+                    <form class="col l12 s12 m12" method="post" action="{% url "signup" %}">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="input-field col l6 m6 s12">
+                                <i class="material-icons prefix fa fa-user"></i>
+                                <input placeholder="Username" type="text" name="username" class="validate" required>
+                            </div>
+                            <div class="input-field col l6 m6 s10">
+                                <i class="material-icons prefix fa fa-user-circle"></i>
+                                <input placeholder="Fullname" type="text" name="fullname" class="validate" required>
+                            </div>
+                            <div class="input-field col l6 m6 s12">
+                                <i class="material-icons prefix">email</i>
+                                <input placeholder="Email" type="email" name="email" class="validate" required>
+                            </div>
+                            <div class="input-field col l6 m6 s12">
+                                <i class="material-icons prefix">date_range</i>
+                                <input placeholder="Age" type="number" class="validate" name="age" required>
+                            </div>
+                            <div class="input-field col l12 m10 s12">
+                                <i class="fa fa-unlock-alt prefix"></i>
+                                <input placeholder="Password" type="password" name="password1" class="validate"
+                                       required>
+                            </div>
+                            <div class="col helper-text materialize-red-text darken-2">
+                                {{ form.password1.help_text|safe }}
+                            </div>
+                            <div class="input-field col l12 m10 s12">
+                                <i class="fa fa-unlock-alt prefix"></i>
+                                <input placeholder="Confirm password" type="password" class="validate" name="password2"
+                                       required>
+                            </div>
+                            <div class="col helper-text materialize-red-text darken-2">
+                                {{ form.password2.help_text|safe }}
+                            </div>
+                        </div>
+                        <div class="row center">
+                            <div class="col s12 m12 l12">
+                                <button class="btn blue darken-3 waves-effect" type="submit">Sign Up
+                                    <i class="material-icons right">send</i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!--row-->
+            </div>
+        </div>
+    </div>
+{% endblock %}
