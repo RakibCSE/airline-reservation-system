@@ -1,14 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
-<body>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-</form>
-</body>
-</html>
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "css/signup_login.css" %}">
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col l6 push-l3 m8 push-m2 s12">
+            <div class="card-panel auth-card">
+                <h4 class="blue-grey-text center">Sign In</h4>
+                <div class="row">
+                    <form class="col l12 s10 m12 push-s1" method="post" action="{% url "login" %}">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="input-field col l12 s12 m12">
+                                <i class="material-icons prefix">person</i>
+                                <input placeholder="Username" id="id_username" type="text" name="username"
+                                       class="validate" required>
+                            </div>
+                            <div class="input-field col l12 s12 m12 input-field">
+                                <i class="fa fa-unlock-alt prefix"></i>
+                                <input placeholder="Password" id="id_password" type="password" name="password"
+                                       class="validate" required>
+                            </div>
+                            <div class="row position-right">
+                                <div class="col l12 m12 s12">
+                                    <a href="{% url "password_reset" %}" class="blue-text">Forgot password?</a>
+                                </div>
+                            </div>
+                            <div class="row center">
+                                <div class="col s12 m12 l12 button-submit">
+                                    <button class="btn blue darken-2 waves-effect" type="submit">Sign in
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div><!--form row-->
+                    </form>
+                </div><!--row-->
+            </div><!--card panel-->
+        </div><!--row column-->
+    </div>
+{% endblock %}
