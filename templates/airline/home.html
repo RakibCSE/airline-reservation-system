@@ -1,10 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Welcome to Home!</h1>
-</body>
-</html>
+{% extends "base/base.html" %}
+{% load airline_tags %}
+
+{% block content %}
+    <div class="card-panel search-card">
+        <form class="col l12 m12 s12" action="{% url "airline:search" %}" method="get">
+            <div class="row">
+                <div class="input-field col s12 m8 l4">
+                    <i class="material-icons prefix">place</i>
+                    <i class="material-icons prefix">place</i>
+                    <input placeholder="From" type="text" id="from-place" class="validate" name="from_place"
+                            {% if session.from_place %} value="{{ session.from_place }}" {% endif %} required>
+                </div>
+
+                <div class="input-field col s12 m8 l4">
+                    <i class="material-icons prefix">place</i>
+                    <input placeholder="To" type="text" class="validate" name="to_place"
+                            {% if session.to_place %} value="{{ session.to_place }}" {% endif %} required>
+                </div>
+
+                <div class="input-field col s12 m8 l4">
+                    <i class="material-icons prefix">date_range</i>
+                    <input placeholder="Date" type="text" name="flight_date" class="datepicker"
+                            {% if session.flight_date %} value="{{ session.flight_date }}" {% endif %} required>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col s12 m12 l12">
+                    <button class="btn btn-large waves-effect blue darken-3 z-depth-2" type="submit">
+                        Check Now <i class="material-icons right">send</i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    {% if flight_data %}
+        <table class="responsive-table centered striped flight_table">
+            <thead class="blue darken-3 white-text">
+            <th>Flight</th>
+            <th>From</th>
+            <th>Departure</th>
+            <th>To</th>
+            <th>Arrival</th>
+            <th>Total Seats</th>
+            <th>Available Seats</th>
+            <th>Price</th>
+            <th></th>
+            </thead>
+            <tbody>
+            {% for data in flight_data %}
+                <tr>
+                    <td>
+                        {#                        <img src="{{ data.flight_image }}" alt="Flight image">#}
+                        <span>{{ data.flight }}</span>
+                    </td>
+                    <td>{{ data.from_place }}</td>
+                    <td>{{ data.departure_time }}</td>
+                    <td>{{ data.to_place }}</td>
+                    <td>{{ data.arrival_time }}</td>
+                    <td>{{ data.total_seat }}</td>
+                    <td>{{ data.available_seat }}</td>
+                    <td>{{ data.ticket_rate }}$</td>
+                    <td>
+                        <a class="btn blue accent-3 white-text" href="{% url "airline:book" data.id %}"
+                           target="_blank">Book
+                            now</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        {% if flight_data.has_other_pages %}
+            <ul class="pagination center">
+                {% if flight_data.has_previous %}
+                    <li class="waves-effect">
+                        <a href="?{% url_replace request 'page' flight_data.previous_page_number %}">
+                            <i class="material-icons">chevron_left</i>
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="disabled"><i class="material-icons">chevron_left</i></li>
+                {% endif %}
+                {% for i in flight_data.paginator.page_range %}
+                    {% if flight_data.number == i %}
+                        <li class="active">{{ i }}</li>
+                    {% else %}
+                        <li class="waves-effect">
+                            <a href="?{% url_replace request 'page' i %}">{{ i }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                {% if flight_data.has_next %}
+                    <li>
+                        <a href="?{% url_replace request 'page' flight_data.next_page_number %}">
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="disabled"><i class="material-icons">chevron_right</i></li>
+                {% endif %}
+            </ul>
+        {% endif %}
+    {% endif %}
+{% endblock %}
