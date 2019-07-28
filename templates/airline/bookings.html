@@ -1,0 +1,47 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+    <div class="container">
+        {% if booking_data %}
+            <table class="responsive-table centered striped">
+                <thead>
+                <tr>
+                    <th>Flight</th>
+                    <th>From</th>
+                    <th>Departure</th>
+                    <th>To</th>
+                    <th>Arrival</th>
+                    <th>No of seats</th>
+                    <th>Total Costs</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+                </thead>
+
+                <tbody>
+                {% for data in booking_data %}
+                    <tr>
+                        <td>{{ data.Travelling.flight }}</td>
+                        <td>{{ data.Travelling.from_place }}</td>
+                        <td>{{ data.Travelling.departure_time }}</td>
+                        <td>{{ data.Travelling.to_place }}</td>
+                        <td>{{ data.Travelling.arrival_time }}</td>
+                        <td>{{ data.no_of_seats }}</td>
+                        <td>{{ data.cost }}</td>
+                        <td>{{ session.flight_date }}</td>
+                        <td>
+                            <a class="btn red darken-3"
+                               href="{% url "airline:cancel_booking" data.booked_id data.Travelling_id %}">Cancel</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="center">
+                <i class="fa fa-6x fa-sad-cry red-text accent-4"></i>
+                <span><h3 class="blue-grey-text">No bookings found</h3></span>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
