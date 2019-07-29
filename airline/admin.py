@@ -6,7 +6,6 @@ from .models import Travelling, Booking
 class TravellingAdmin(admin.ModelAdmin):
     list_display = (
         "flight",
-        "flight_image",
         "from_place",
         "to_place",
         "departure_time",
