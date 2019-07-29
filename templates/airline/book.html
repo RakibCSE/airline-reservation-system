@@ -14,29 +14,29 @@
             <div class="row">
                 <div class="col l12 m12 s12 main-col">
                     <div class="row blue-grey-text">
-                        <div class="col l2 m3">
+                        <div class="col l2 m3 s12">
                             <span><i class="material-icons prefix">flight</i></span>
                             <h3>{{ flight_data.flight }}</h3>
                         </div>
-                        <div class="col l2 m4">
+                        <div class="col l2 m4 s12">
                             <span><i class="fa fa-2x fa-plane-departure"></i></span>
                             <h4>{{ flight_data.from_place }}</h4>
                             <h5>{{ flight_data.departure_time }}</h5>
                         </div>
-                        <div class="col l3 m4">
+                        <div class="col l3 m4 s12">
                             <span><i class="fa fa-2x fa-plane-arrival"></i></span>
                             <h4>{{ flight_data.to_place }}</h4>
                             <h5>{{ flight_data.arrival_time }}</h5>
                         </div>
-                        <div class="col l2 m2">
+                        <div class="col l2 m2 s6">
                             <span><i class="material-icons prefix">airline_seat_recline_normal</i></span>
                             <h3>{{ flight_data.available_seat }}</h3>
                         </div>
-                        <div class="col l2 m2">
+                        <div class="col l2 m2 s6">
                             <span><i class="material-icons prefix">event_seat</i></span>
                             <h3>{{ flight_data.total_seat }}</h3>
                         </div>
-                        <div class="col l1 m2">
+                        <div class="col l1 m2 s12">
                             <span><i class="material-icons prefix">attach_money</i></span>
                             <h3>{{ flight_data.ticket_rate }}</h3>
                         </div>
@@ -49,26 +49,26 @@
             <div class="card-panel purchase-card-panel col l6 m10 s12 push-l3">
                 <form class="row" action="{% url "airline:save_booking" flight_data.id %}" method="post">
                     {% csrf_token %}
-                    <div class="input-field col l6 m4">
+                    <div class="input-field col l6 m4 s12">
                         <input type="number" name="no_of_seats" id="no-of-seats" min="1"
                                max="{{ flight_data.available_seat }}" placeholder="Number of seats">
                     </div>
-                    <div class="input-field col l6 m4">
+                    <div class="input-field col l6 m4 s12">
                         <input type="number" name="credit_card_number" id="credit-card-number"
                                placeholder="Credit card number">
                     </div>
-                    <div class="input-field col l6 m4">
+                    <div class="input-field col l6 m4 s12">
                         <input type="number" name="cvv" id="cvv" maxlength="3" placeholder="CVV">
                     </div>
-                    <div class="input-field col l6 m4">
+                    <div class="input-field col l6 m4 s12">
                         <input type="text" name="valid_till" id="valid-till" maxlength="7" placeholder="Valid till">
                     </div>
-                    <div class="input-field col l6 m4 push-l3">
+                    <div class="input-field col l6 m4 s12 push-l3">
                         <input placeholder="Total amount" type="text" name="total_amount" id="total-amount" readonly>
                     </div>
                     <br>
                     <div class="row center">
-                        <div class="col s12 m12 l12">
+                        <div class="col l12 m12 s12">
                             <button class="btn waves-effect blue darken-3 z-depth-2" type="submit">
                                 Book Now <i class="material-icons right">send</i></button>
                         </div>
