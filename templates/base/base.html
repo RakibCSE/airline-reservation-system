@@ -24,8 +24,8 @@
         <div class="nav-wrapper">
             <div class="container">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <a href="{% url "airline:home" %}">
-                    <i class="fa fa-4x fa-plane-departure"></i>
+                <a class="brand-logo" href="{% url "airline:home" %}">
+                    <i class="fa fa-2x fa-plane-departure"></i>
                 </a>
                 <ul class="right hide-on-med-and-down">
                     {% if user.is_authenticated %}
@@ -48,7 +48,11 @@
 <ul class="sidenav" id="mobile-demo">
     {% if user.is_authenticated %}
         <li><a href="{% url "airline:bookings" user.id %}">View Bookings</a></li>
-        <li><a href="{% url "logout" %}">Logout</a></li>
+        <li>
+            <a href="{% url "logout" %}">Logout
+                <span class="badge yellow darken-3">{{ user.username }}</span>
+            </a>
+        </li>
     {% else %}
         <li><a href="{% url "signup" %}">Sign up</a></li>
         <li><a href="{% url "login" %}">Log in</a></li>
