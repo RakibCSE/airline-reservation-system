@@ -28,7 +28,11 @@
                         <td>{{ data.Travelling.arrival_time }}</td>
                         <td>{{ data.no_of_seats }}</td>
                         <td>{{ data.cost }}</td>
-                        <td>{{ session.flight_date }}</td>
+                        {% if session.flight_date %}
+                            <td>{{ session.flight_date }}</td>
+                        {% else %}
+                            <td id="today-date"></td>
+                        {% endif %}
                         <td>
                             <a class="btn red darken-3"
                                href="{% url "airline:cancel_booking" data.booked_id data.Travelling_id %}">Cancel</a>
@@ -47,4 +51,11 @@
             </div>
         {% endif %}
     </div>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        let date_obj = new Date();
+        document.getElementById("today-date").innerText = date_obj.getDate() + "-" + (date_obj.getMonth()+1) + "-" + date_obj.getFullYear();
+    </script>
 {% endblock %}
