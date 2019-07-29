@@ -1,3 +1,5 @@
+import random
+
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.shortcuts import render, HttpResponseRedirect
@@ -6,7 +8,16 @@ from airline.models import Travelling, Booking
 
 
 def home(request):
-    return render(request, template_name="airline/home.html")
+    flight_data = sorted(Travelling.objects.all().order_by('ticket_rate')[:10], key= lambda x : random.random())
+    if flight_data:
+        response = render(request, "airline/home.html", {
+            "flight_data": flight_data[:10],
+            "session": request.session
+        })
+        return response
+
+    response = render(request, "airline/home.html")
+    return response
 
 
 def search(request):
@@ -16,7 +27,7 @@ def search(request):
 
         from_place = request.session['from_place'] = get_data['from_place'].strip()
         to_place = request.session['to_place'] = get_data['to_place'].strip()
-        date = request.session['flight_date'] = get_data['flight_date']
+        flight_date = request.session['flight_date'] = get_data['flight_date']
         page = get_data.get("page", 1)
 
         if from_place and to_place:
