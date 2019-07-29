@@ -1,0 +1,110 @@
+id,flight,from_place,to_place,departure_time,arrival_time,total_seat,available_seat,ticket_rate,total_collected,flight_image
+442,IndiGo,New Delhi,Mumbai,04:50:00,07:10:00,150,150,39,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+447,Vistara,Mumbai,Kolkata,07:30:00,09:45:00,250,250,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+460,IndiGo,Mumbai,Kolkata,09:25:00,11:45:00,250,250,47,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+463,AirIndia,Mumbai,Kolkata,18:05:00,21:45:00,250,250,49,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+466,AirIndia,Mumbai,Kolkata,17:00:00,19:20:00,250,250,53,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+481,Go Air,Kolkata,Chennai,07:25:00,15:20:00,200,200,84,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+484,IndiGo,Kolkata,Chennai,06:40:00,10:35:00,200,200,85,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+487,Spicejet,Kolkata,Chennai,21:35:00,07:10:00,200,200,92,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+491,AirIndia,Kolkata,Chennai,20:05:00,21:30:00,200,200,99,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+494,Spicejet,Kolkata,Chennai,18:35:00,20:45:00,200,200,102,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+509,Vistara,Kolkata,Chennai,09:35:00,10:55:00,200,200,118,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+513,AirIndia,Kolkata,Chennai,19:00:00,21:10:00,200,200,127,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+515,Go Air,Kolkata,Chennai,20:50:00,23:10:00,200,200,129,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+519,Vistara,Kolkata,Chennai,17:40:00,19:55:00,200,200,132,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+522,IndiGo,Kolkata,Chennai,11:05:00,15:15:00,200,200,136,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+525,AirIndia,Kolkata,Chennai,09:45:00,12:30:00,200,200,148,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+526,AirIndia,Singapore,Chennai,11:35:00,17:30:00,200,200,152,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+451,IndiGo,Dhaka,Chittagong,06:40:00,08:50:00,150,150,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+453,Go Air,Dhaka,Chittagong,08:00:00,10:15:00,150,150,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+456,Go Air,Dhaka,Chittagong,10:35:00,12:50:00,150,150,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+458,Spicejet,Dhaka,Chittagong,07:20:00,09:25:00,150,150,47,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+473,IndiGo,Dhaka,Chittagong,17:30:00,19:40:00,150,150,73,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+475,AirIndia,Dhaka,Chittagong,23:00:00,01:15:00,150,150,75,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+478,Go Air,Chittagong,Dhaka,08:10:00,16:05:00,150,150,77,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+501,Spicejet,Chittagong,Dhaka,12:55:00,22:45:00,150,150,111,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+505,Vistara,Chittagong,Dhaka,13:20:00,14:45:00,150,150,116,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+508,Vistara,Chittagong,Dhaka,19:50:00,21:55:00,150,150,117,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+531,Vistara,Kolkata,Dhaka,08:05:00,10:50:00,200,200,186,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+533,IndiGo,Kolkata,Dhaka,14:10:00,18:25:00,200,200,189,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+538,IndiGo,Kolkata,Dhaka,13:40:00,17:30:00,200,200,210,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+539,Vistara,Dhaka,Chennai,07:15:00,10:05:00,250,250,224,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+541,AirIndia,Dhaka,Chennai,16:45:00,18:55:00,250,250,241,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+543,IndiGo,Dhaka,Chennai,22:30:00,00:45:00,250,250,258,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+445,Vistara,Dhaka,Chittagong,06:00:00,08:00:00,150,150,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+499,AirIndia,Dhaka,Kolkata,07:05:00,08:15:00,200,200,109,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+444,Go Air,Singapore,Chennai,07:00:00,09:15:00,200,200,39,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+517,IndiGo,Chennai,Mumbai,13:35:00,17:40:00,250,250,130,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+524,Vistara,Chennai,Mumbai,14:50:00,17:00:00,250,250,143,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+488,Vistara,Chennai,Mumbai,11:40:00,14:00:00,250,250,94,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+472,AirIndia,Chennai,Mumbai,05:55:00,07:20:00,250,250,65,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+503,Spicejet,New Delhi,Mumbai,21:35:00,23:55:00,300,300,114,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+530,Spicejet,New Delhi,Mumbai,20:30:00,22:45:00,300,300,172,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+537,AirIndia,New Delhi,Mumbai,21:00:00,23:15:00,300,300,209,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+547,AirIndia,Kolkata,Dhaka,09:45:00,11:55:00,200,200,564,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+462,Vistara,Dhaka,Kolkata,08:45:00,11:10:00,200,200,49,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+479,Go Air,Dhaka,Kolkata,07:25:00,14:20:00,200,200,79,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+486,Spicejet,Dhaka,Kolkata,11:10:00,17:25:00,200,200,85,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+497,AirIndia,Dhaka,Kolkata,10:15:00,11:35:00,200,200,104,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+440,AirAsia,New Delhi,Mumbai,05:55:00,08:15:00,150,150,39,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+443,IndiGo,New Delhi,Mumbai,05:35:00,07:45:00,150,150,39,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+459,Spicejet,Mumbai,Kolkata,10:30:00,12:40:00,250,250,47,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+461,Go Air,Mumbai,Kolkata,14:25:00,16:40:00,250,250,47,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+464,AirIndia,Mumbai,Kolkata,07:00:00,09:10:00,250,250,50,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+498,AirIndia,Kolkata,Chennai,15:00:00,17:15:00,200,200,107,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+511,Vistara,Kolkata,Chennai,07:10:00,09:15:00,200,200,120,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+514,AirIndia,Kolkata,Chennai,06:55:00,09:05:00,200,200,128,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+516,AirIndia,Kolkata,Chennai,10:55:00,13:15:00,200,200,129,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+449,Spicejet,Kolkata,Chennai,06:10:00,08:30:00,200,200,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+520,Vistara,Kolkata,Chennai,12:50:00,15:00:00,200,200,135,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+523,AirIndia,Kolkata,Chennai,11:35:00,14:30:00,200,200,140,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+492,Go Air,Dhaka,Chittagong,19:40:00,22:00:00,150,150,100,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+467,IndiGo,Mumbai,Kolkata,09:50:00,12:00:00,250,250,53,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+468,Vistara,Mumbai,Kolkata,10:20:00,12:35:00,250,250,54,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+483,IndiGo,Kolkata,Chennai,05:05:00,09:10:00,200,200,85,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+485,Spicejet,Kolkata,Chennai,06:05:00,12:45:00,200,200,85,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+490,IndiGo,Kolkata,Chennai,05:35:00,09:40:00,200,200,94,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+495,Spicejet,Kolkata,Chennai,11:30:00,18:55:00,200,200,103,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+496,Go Air,Kolkata,Chennai,20:05:00,02:00:00,200,200,104,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+527,Vistara,Singapore,Chennai,20:40:00,22:50:00,200,200,160,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+450,Spicejet,Dhaka,Chittagong,08:30:00,10:35:00,150,150,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+452,IndiGo,Dhaka,Chittagong,07:30:00,09:40:00,150,150,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+454,IndiGo,Dhaka,Chittagong,08:30:00,10:40:00,150,150,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+457,IndiGo,Dhaka,Chittagong,11:25:00,13:40:00,150,150,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+470,Vistara,Dhaka,Chittagong,15:15:00,17:35:00,150,150,56,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+471,Spicejet,Dhaka,Chittagong,15:50:00,18:05:00,150,150,65,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+474,AirIndia,Dhaka,Chittagong,13:00:00,15:10:00,150,150,75,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+477,IndiGo,Chittagong,Dhaka,09:55:00,13:45:00,150,150,77,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+500,Vistara,Chittagong,Dhaka,13:35:00,14:45:00,150,150,110,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+502,Spicejet,Chittagong,Dhaka,19:45:00,22:05:00,150,150,114,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+504,IndiGo,Chittagong,Dhaka,17:00:00,21:30:00,150,150,116,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+506,Vistara,Chittagong,Dhaka,17:45:00,20:10:00,150,150,117,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+529,Spicejet,Chittagong,Dhaka,18:45:00,01:40:00,150,150,163,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+532,Spicejet,Kolkata,Dhaka,18:55:00,23:59:00,200,200,187,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+535,IndiGo,Kolkata,Dhaka,17:00:00,19:10:00,200,200,195,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+536,Vistara,Kolkata,Dhaka,18:10:00,19:50:00,200,200,206,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+480,Go Air,Kolkata,Dhaka,22:45:00,01:00:00,200,200,79,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+540,AirIndia,Dhaka,Chennai,18:00:00,20:15:00,250,250,237,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+542,AirIndia,Dhaka,Chennai,17:15:00,19:25:00,250,250,242,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+545,Vistara,Dhaka,Cox's Bazar,16:05:00,18:50:00,250,250,337,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+446,Vistara,Mumbai,Kolkata,07:00:00,09:00:00,250,250,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+476,Spicejet,Dhaka,Kolkata,07:20:00,16:05:00,200,200,77,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+512,Vistara,Chennai,Mumbai,06:25:00,09:05:00,250,250,123,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+441,AirAsia,Singapore,Chennai,06:55:00,09:05:00,200,200,39,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+448,Vistara,Singapore,Chennai,14:20:00,16:30:00,200,200,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+521,Vistara,Chennai,Mumbai,21:30:00,23:40:00,250,250,135,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+528,IndiGo,Chennai,Mumbai,18:35:00,20:50:00,250,250,161,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+455,IndiGo,Chennai,Mumbai,10:30:00,12:45:00,250,250,42,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+469,AirAsia,Chennai,Mumbai,15:40:00,17:50:00,250,250,55,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+544,AirIndia,Dhaka,Chennai,11:15:00,12:15:00,250,250,260,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+507,Vistara,New Delhi,Mumbai,19:00:00,21:10:00,300,300,117,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+534,Go Air,New Delhi,Mumbai,16:50:00,21:25:00,300,300,192,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+518,AirIndia,Kolkata,Chennai,15:05:00,18:15:00,200,200,131,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+546,Vistara,Kolkata,Dhaka,16:05:00,18:50:00,200,200,372,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+439,AirIndia,Kolkata,Dhaka,10:30:00,12:45:00,200,200,38,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+465,IndiGo,Dhaka,Kolkata,16:00:00,18:15:00,200,200,52,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+482,Go Air,Dhaka,Kolkata,18:20:00,20:35:00,200,200,84,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+489,IndiGo,Dhaka,Kolkata,15:00:00,17:10:00,200,200,94,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+493,Spicejet,Dhaka,Kolkata,05:55:00,14:20:00,200,200,101,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
+510,Spicejet,Dhaka,Kolkata,07:15:00,14:30:00,200,200,120,0,https://media.apnarm.net.au/media/images/2018/01/05/imagev172581b44162efca316c368ceb9332a48-de5o2q14aokk572qjp2_ct1880x930.jpg
