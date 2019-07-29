@@ -1,6 +1,7 @@
 import random
 
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.shortcuts import render, HttpResponseRedirect
 
@@ -53,6 +54,7 @@ def search(request):
     return response
 
 
+@login_required
 def book(request, flight_id):
     flight_data = Travelling.objects.get(id=flight_id)
     response = render(request, "airline/book.html", {
@@ -61,6 +63,7 @@ def book(request, flight_id):
     return response
 
 
+@login_required
 def save_booking(request, flight_id):
     if request.POST:
         post_data = request.POST
@@ -87,6 +90,7 @@ def save_booking(request, flight_id):
     return response
 
 
+@login_required
 def cancel_booking(request, user_id, flight_id):
 
     booking_data = Booking.objects.get(
@@ -95,6 +99,7 @@ def cancel_booking(request, user_id, flight_id):
 
     travelling_data = Travelling.objects.get(id=flight_id)
     travelling_data.available_seat += booking_data.no_of_seats
+    travelling_data.total_collected -= booking_data.cost
     travelling_data.save()
 
     booking_data.delete()
@@ -103,6 +108,7 @@ def cancel_booking(request, user_id, flight_id):
     return response
 
 
+@login_required
 def bookings(request, user_id):
     booking_data = Booking.objects.filter(booked_id=user_id)
 
