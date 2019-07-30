@@ -18,7 +18,7 @@ class TravellingAdmin(admin.ModelAdmin):
 
 
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ("booked", "no_of_seats", "Travelling", "cost",)
+    list_display = ("booked","ticket_id", "date", "no_of_seats", "Travelling", "cost",)
 
 
 admin.site.register(Booking, BookingAdmin)

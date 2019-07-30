@@ -1,6 +1,9 @@
 from django.conf import settings
 from django.db import models
 
+from django.utils import timezone
+
+import datetime
 
 class Travelling(models.Model):
     IMAGE_URL = "https://media.apnarm.net.au/media/images/2018/01/05/" \
@@ -23,6 +26,8 @@ class Travelling(models.Model):
 
 class Booking(models.Model):
     booked = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    ticket_id = models.CharField(null=False, max_length=20)
+    date = models.CharField(null=False, max_length=30)
     no_of_seats = models.IntegerField()
     Travelling = models.ForeignKey(Travelling, on_delete=models.CASCADE)
     cost = models.IntegerField(default=0)
