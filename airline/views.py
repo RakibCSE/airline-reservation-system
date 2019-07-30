@@ -7,13 +7,16 @@ from django.shortcuts import render, HttpResponseRedirect
 
 from airline.models import Travelling, Booking
 
+from .utils import generate_ticket_id
+
 
 def home(request):
-    flight_data = sorted(Travelling.objects.all().order_by('ticket_rate')[:10], key= lambda x : random.random())
+    flight_data = sorted(Travelling.objects.all().order_by('ticket_rate')[:10], key=lambda x: random.random())
     if flight_data:
         response = render(request, "airline/home.html", {
             "flight_data": flight_data[:10],
-            "session": request.session
+            "session": request.session,
+            "demo": "true"
         })
         return response
 
@@ -35,6 +38,7 @@ def search(request):
             flight_data = Travelling.objects.filter(
                 Q(from_place__icontains=from_place) & Q(to_place__icontains=to_place)
             )
+            flight_data = sorted(list(flight_data), key=lambda x: random.random())
 
         paginator = Paginator(list(flight_data), 10)
         try:
@@ -46,7 +50,8 @@ def search(request):
 
         response = render(request, "airline/home.html", {
             "flight_data": flight_data,
-            "session": request.session
+            "session": request.session,
+            "demo": "false"
         })
         return response
 
@@ -58,7 +63,8 @@ def search(request):
 def book(request, flight_id):
     flight_data = Travelling.objects.get(id=flight_id)
     response = render(request, "airline/book.html", {
-        "flight_data": flight_data
+        "flight_data": flight_data,
+        "session": request.session
     })
     return response
 
@@ -67,13 +73,16 @@ def book(request, flight_id):
 def save_booking(request, flight_id):
     if request.POST:
         post_data = request.POST
+        flight_data = Travelling.objects.get(id=flight_id)
+
+        flight_date = post_data['flight_date']
         no_of_seats = post_data['no_of_seats']
         total_amount = post_data['total_amount']
 
-        flight_data = Travelling.objects.get(id=flight_id)
-
         booking = Booking()
         booking.booked = request.user
+        booking.ticket_id = generate_ticket_id(flight_data.flight)
+        booking.date = flight_date
         booking.no_of_seats = no_of_seats
         booking.cost = total_amount
         booking.Travelling = flight_data
