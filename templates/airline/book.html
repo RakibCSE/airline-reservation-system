@@ -51,7 +51,7 @@
                     {% csrf_token %}
                     <div class="input-field col l6 m4 s12">
                         <input type="number" name="no_of_seats" id="no-of-seats" min="1"
-                               max="{{ flight_data.available_seat }}" placeholder="Number of seats">
+                               max="{{ flight_data.available_seat }}" placeholder="Number of seats" required>
                     </div>
                     <div class="input-field col l6 m4 s12">
                         <input type="text" name="flight_date" {% if session.flight_date %} value="{{ session.flight_date }}" {% endif %}
@@ -59,13 +59,13 @@
                     </div>
                     <div class="input-field col l6 m4 s12">
                         <input type="number" name="credit_card_number" id="credit-card-number"
-                               placeholder="Credit card number">
+                               placeholder="Credit card number" required>
                     </div>
                     <div class="input-field col l6 m4 s12">
-                        <input type="number" name="cvv" id="cvv" maxlength="3" placeholder="CVV">
+                        <input type="number" name="cvv" id="cvv" maxlength="3" placeholder="CVV" required>
                     </div>
                     <div class="input-field col l6 m4 s12">
-                        <input type="text" name="valid_till" id="valid-till" maxlength="7" placeholder="Valid till">
+                        <input type="text" name="valid_till" id="valid-till" maxlength="7" placeholder="Valid till" required>
                     </div>
                     <div class="input-field col l6 m4 s12">
                         <input placeholder="Total amount" type="text" name="total_amount" id="total-amount" readonly>
