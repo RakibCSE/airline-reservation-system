@@ -60,11 +60,13 @@
                     <td>{{ data.total_seat }}</td>
                     <td>{{ data.available_seat }}</td>
                     <td>{{ data.ticket_rate }}$</td>
-                    <td>
-                        <a class="btn blue accent-3 white-text" href="{% url "airline:book" data.id %}"
-                           target="_blank">Book now
-                        </a>
-                    </td>
+                    {% if demo == "false" %}
+                        <td>
+                            <a class="btn blue accent-3 white-text" href="{% url "airline:book" data.id %}"
+                               target="_blank">Book now
+                            </a>
+                        </td>
+                    {% endif %}
                 </tr>
             {% endfor %}
             </tbody>
