@@ -54,6 +54,10 @@
                                max="{{ flight_data.available_seat }}" placeholder="Number of seats">
                     </div>
                     <div class="input-field col l6 m4 s12">
+                        <input type="text" name="flight_date" {% if session.flight_date %} value="{{ session.flight_date }}" {% endif %}
+                               readonly>
+                    </div>
+                    <div class="input-field col l6 m4 s12">
                         <input type="number" name="credit_card_number" id="credit-card-number"
                                placeholder="Credit card number">
                     </div>
@@ -63,7 +67,7 @@
                     <div class="input-field col l6 m4 s12">
                         <input type="text" name="valid_till" id="valid-till" maxlength="7" placeholder="Valid till">
                     </div>
-                    <div class="input-field col l6 m4 s12 push-l3">
+                    <div class="input-field col l6 m4 s12">
                         <input placeholder="Total amount" type="text" name="total_amount" id="total-amount" readonly>
                     </div>
                     <br>
