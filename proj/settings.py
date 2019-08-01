@@ -72,14 +72,8 @@ DATABASES = {}
 if DEBUG:
     DATABASES = {
         'default': {
-            'NAME': JSON_DATA['db_name'],
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'USER': JSON_DATA['db_user'],
-            'PASSWORD': JSON_DATA['db_password'],
-            'ATOMIC_REQUESTS': True,
-            'HOST': 'localhost',
-            'PORT': '',
-            'CONN_MAX_AGE': 600,
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
 else:
