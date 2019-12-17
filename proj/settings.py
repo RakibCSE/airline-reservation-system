@@ -15,7 +15,7 @@ except FileNotFoundError:
         JSON_DATA = json.load(JSON_FILE)
 
 SECRET_KEY = os.environ.get("SECRET_KEY", JSON_DATA["secret_key"])
-DEBUG = (os.environ.get("DEBUG") == "True")
+DEBUG = (os.environ.get("DEBUG", True) == "True")
 
 ALLOWED_HOSTS = ["*"]
 
